@@ -5,23 +5,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wale grills</title>
     <link rel="stylesheet" href="./output.css" />
-    <link rel="shortcut icon" href="./Assets/Logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Moon+Dance&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&family=Space+Grotesk:wght@500&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./Assets//icons8-grill-50.png" type="image/x-icon" />
     <script src="./index.js"></script>
   </head>
-  <body class="bg-black">
-    <div class="wrapper p-2">
-      <nav class="w-full flex justify-between h-12">
+  <body class="bg-black h-full font-robotoMono  text-slate-200  ">
+    <div class="wrapper w-full ml-auto mr-auto">
+      <nav class="w-11/12 ml-auto mr-auto flex mt-3 justify-between h-12">
         <img src="./Assets/icons8-grill-50.png" alt="" class="text-red-600" />
         <div class="mt-auto mb-auto">
-          <div class="w-9 h-1 bg-red-600"></div>
-          <div class="w-9 h-1 bg-red-600 mt-1.5"></div>
-          <div class="w-9 h-1 bg-red-600 mt-1.5"></div>
+          <div class="w-9 h-1 bg-red-600 rounded-sm"></div>
+          <div class="w-9 h-1 bg-red-600 mt-1.5 rounded-sm"></div>
+          <div class="w-9 h-1 bg-red-600 mt-1.5 rounded-sm"></div>
         </div>
       </nav>
-      <main>
-        <div class="slideContainer"></div>
-      </main>
-      <footer></footer>
+      <main class="h-full mt-5 p-1">
+      <div class="slideShow relative h-56 overflow-hidden">
+        <div class="slide  absolute  w-full transition-opacity">
+            <img src="./Assets/Jollof rice.jpg" loading="lazy" class="w-full " alt="slidePics">
+        </div>
+        <div class="slide absolute  w-full transition-opacity">
+            <img src="./Assets/Meat pie.jpg" class="w-full" loading="lazy" alt="slidePics">
+        </div>
+        <div class="slide absolute w-full transition-opacity ">
+            <img src="./Assets/Grill.jpg" class="w-full " loading="lazy" alt="slidePics">
+        </div>
+        <div class="textContainer absolute w-full h-full backdrop-blur-sm z-10">
+            <h1 class="text-4xl font-sacraMento text-center translate-y-20  text-slate-200">Wale grills</h1>
+        </div>
+      </div>
+      <div class="ABOUT p-3">
+        <h1 class="text-center font-bold text-xl text-red-600">ABOUT US</h1>
+        <img src="" alt="">
+        <p>Wale grills is a london-based company..., ua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="productSection h-60">
+        <h1 class="text-red-600  font-bold text-xl  text-center">FOOD ITEMS</h1>
+        <div class="flex justify-between">
+          <div class="border w-max pl-2 pr-2 text-xl pb-1 text-center arrowL mt-auto mb-auto  rounded-full">&#8592</div>
+          <div class="w-3/4" >
+            <div class="productSlide  relative h-44 w-full overflow-hidden ">
+                <div class="productS absolute w-full h-full">
+                    <img src="./Assets/BBQ RIBS.jpg" class="w-full h-full" alt="">
+                </div>
+                <div class=" productS  absolute w-full h-full" >
+                    <img src="./Assets/Beef grill.jpg" class="w-full h-full" alt="">
+                </div>
+                <div class=" productS   absolute w-full h-full" >
+                    <img src="./Assets/Burger.jpg" class="w-full h-full" alt="">
+                </div>
+                <div class="productS  absolute w-full h-full" >
+                    <img src="./Assets/Chicken wings.jpg" class="w-full h-full" alt="">
+                </div>
+                <div class=" productS  absolute w-full h-full" >
+                    <img src="./Assets/Chicken.jpg" class="w-full h-full" alt="">
+                </div>
+                <div class=" productS   absolute w-full h-full" >
+                    <img src="./Assets/Grill.jpg" class="w-full h-full" alt="">
+                </div>
+                <div class=" productS  absolute w-full h-full" >
+                    <img src="./Assets/Jollof rice.jpg" class="w-full h-full" alt="">
+                </div>
+                <div class=" productS   absolute w-full h-full" >
+                    <img src="./Assets/Meat pie.jpg" class="w-full h-full" alt="">
+                </div>
+                <div class=" productS   absolute w-full h-full" >
+                    <img src="./Assets/Puff puff.jpg" class="w-full h-full" alt="">
+                </div>
+                <div class=" productS   absolute w-full h-full" >
+                    <img src="./Assets/Shawarma.jpg" class="w-full h-full" alt="">
+                </div>
+            </div>
+            <div><h1 class="text-center itemName uppercase"></h1></div>
+          </div>
+          <div class=" border w-max pl-2 pr-2 text-xl pb-1 mt-auto mb-auto text-center arrowR rounded-full">&#8594</div>
+        </div>
+      </div>
+
+      <div class="menu  w-11/12 mt-4 ml-auto mr-auto">
+            <h1 class="text-center text-red-600  font-bold text-xl uppercase">Standard Menu</h1>
+         <div class="trays mt-3">
+        <h2 class=" ml-7 mb-3 text-red-600 font-medium  ">5l and 14L trays</h1>
+        <ul class="">
+          <li class="flex justify-between">
+            <h1>JOLLOF RICE</h1>
+            <h1>£28-£70</h1>
+          </li>
+          <li class="flex justify-between">
+            <h1>FRIED RICE</h1>
+            <h1>£35-£85</h1>
+          </li>
+          <li class="flex justify-between">
+            <h1>EFO RIRO</h1>
+            <h1>£55-£140</h1>
+          </li>
+          <li class="flex justify-between">
+            <h1>EGUSI</h1>
+            <h1>£58-£150</h1>
+          </li>
+        </ul>
+            </div>
+            <div class="pastry mt-3">
+                <h2 class="ml-7 mb-3 text-red-600 font-medium" >Pastry</h1>
+                <ul class="">
+                  <li class="flex justify-between">
+                    <h1>PUFF PUFF(60 BALLS)</h1>
+                    <h1>£28</h1>
+                  </li>
+                  <li class="flex justify-between">
+                    <h1>MEAT PIE(10PCS)</h1>
+                    <h1>£22</h1>
+                  </li>
+                  <li class="flex justify-between">
+                    <h1>BEEF/CHICKEN/MIX-MEAT  <br>  SHAWARMA</h1>
+                    <h1 class="mt-auto mb-auto">£9.50</h1>
+                  </li>
+                </ul>
+            </div>
+            <div class="protein mt-3 ">
+            <h2 class="ml-7 mb-3 font-medium text-red-600">Proteins</h1>
+            <ul class="">
+              <li class="flex justify-between">
+                <h1>CHICKEN (20PCS)</h1>
+                <h1>£45</h1>
+              </li>
+              <li class="flex justify-between">
+                <h1>LEAF MOI MOI (10PCS)</h1>
+                <h1>£22</h1>
+              </li>
+              <li class="flex justify-between">
+                <h1>PLASTIC MOI MOI (10PCS)</h1>
+                <h1>£20</h1>
+              </li>
+              <li class="flex justify-between">
+                <h1>ASUN</h1>
+                <h1>£95</h1>
+              </li>
+              <li class="flex justify-between">
+                <h1>1/2 ASUN</h1>
+                <h1>£50</h1>
+              </li>
+              <li class="flex justify-between">
+                <h1>BEEF SUYA</h1>
+                <h1>£90</h1>
+              </li>
+              <li class="flex justify-between">
+                <h1>1/2 SUYA</h1>
+                <h1>£45</h1>
+              </li>
+              <li class="flex justify-between">
+                <h1>CHICKEN WINGS(30PCS)</h1>
+                <h1>£26</h1>
+              </li>
+              <li class="flex justify-between">
+                <h1>BBQ RIBS(20 PCS)</h1>
+                <h1>£75</h1>
+              </li>
+            </ul>
+            </div>
+      </div>
+      
+      <div class="OPENING p-3">
+        <h1 class="text-center text-red-600 mb-3 font-bold text-xl ">OPENING HOURS</h1>
+        <div class="flex justify-between">
+            <h1>SATURDAY</h1>
+            <h1>9:00AM-7:00PM</h1>
+        </div>
+        <div class="flex justify-between">
+            <h1>SUNDAY</h1>
+            <h1>9:00AM-7:00PM</h1>
+        </div>
+        <h1 class="mt-3 text-2xl mb-3">Kindly note:</h1>
+        <ul class="list-disc list-inside">
+            <li class="mb-3"   >Delivery is on saturday and sunday (fees apply).</li>
+            <li class="mb-3"   >DEADLINE for order is thursday at 10PM.</li>
+            <li class="mb-3"   >Min spend for delivery is £120.Now accepting half tray orders.</li>
+        </ul>
+      </div>  
+    </main>
+      <footer class="bg-red-600 ml-auto mr-auto p-3  text-black">
+        <h1 class="text-xl font-bold "  >For further enquiries:</h1>
+        <div class="flex justify-around w-3/4 ml-auto mr-auto">
+            <img src="./Assets/icons8-whatsapp-50.png" class="w-8"    alt="">
+            <img src="./Assets/icons8-facebook-50.png" class="w-8" alt="">
+            <img src="./Assets/icons8-instagram-50.png" class="w-8" alt="">
+            <img src="./Assets/icons8-gmail-50.png" class="w-8" alt="">
+            <img src="./Assets/icons8-tiktok-50 (1).png" class="w-8" alt="">
+        </div>
+        <div class="adress flex mt-3 ml-auto mr-auto text-center w-max ">
+        <img src="./Assets/icons8-location-50.png" class="w-8"   alt="">
+        <h1 class="font-bold"  >SE LONDON-ABBEY WOOD.</h1>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
