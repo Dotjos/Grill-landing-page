@@ -63,15 +63,15 @@ function navBar() {
   const sideNav = document.querySelector(".sect");
   const times = document.querySelector(".times");
   navHam.addEventListener("click", function () {
-    sideNav.style.width = "60%";
+    sideNav.classList.remove("hidden");
   });
   times.addEventListener("click", function () {
-    sideNav.style.width = "0%";
+    sideNav.classList.add("hidden");
   });
 }
 
 function slideTo() {
-  const Links = document.querySelectorAll(".sect a");
+  const Links = document.querySelectorAll(".link a");
   Links.forEach((link) =>
     link.addEventListener("click", function (event) {
       event.preventDefault();

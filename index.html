@@ -11,34 +11,51 @@
     <link rel="shortcut icon" href="./Assets//icons8-grill-50.png" type="image/x-icon" />
     <script src="./index.js"></script>
   </head>
-  <body class="bg-black h-full font-robotoMono  text-slate-200  ">
+  <body class="bg-black h-full font-robotoMono text-slate-200">
     <div class="wrapper w-full ml-auto mr-auto">
-      <nav class="w-full top-0 p-2 ml-auto mr-auto flex fixed z-50 backdrop-blur-sm lg:bg-black justify-between h-auto">
-        <img src="./Assets/icons8-grill-50.png" alt="" class="text-red-600" />
-        <div class="sideNav mt-auto mb-auto">
-        <div class="mt-auto lg:hidden mb-auto navHam">
-          <div class="w-9 h-1 bg-red-600 rounded-sm"></div>
-          <div class="w-9 h-1 bg-red-600 mt-1.5 rounded-sm"></div>
-          <div class="w-9 h-1 bg-red-600 mt-1.5 rounded-sm"></div>
+      <nav class="w-full lg:p-4 top-0 p-2 ml-auto mr-auto flex fixed z-50 backdrop-blur-sm lg:bg-black justify-between h-auto">
+          <div class="hidden mt-auto mb-auto lg:inline-block"  >
+            <h1 class="font-sacraMento text-4xl  font-bold mt-auto mb-auto text-red-600" >Wale grills</h1>
+          </div>
+        <div class="mt-auto mb-auto">
+        <img src="./Assets/icons8-grill-50.png" alt="" />
+       </div>
+
+       <div class="mt-auto lg:hidden mb-auto navHam">
+        <div class="w-9 h-1 bg-red-600 rounded-full"></div>
+        <div class="w-9 h-1 bg-red-600 mt-1.5 rounded-full"></div>
+        <div class="w-9 h-1 bg-red-600 mt-1.5 rounded-full"></div>
         </div>
-        <div class="sect h-max w-0 lg:w-4/5 lg:bg-black fixed top-0 right-0 bg-black rounded-md overflow-x-hidden z-50 xl:w-8/12">
-            <div class="flex justify-between p-3  lg:p-2.5"  >
+
+      <div class="sideNav deskTop hidden lg:inline-block  w-3/4 mt-auto mb-auto">
+            <ul class=" p-5 text-2xl lg:flex lg:justify-between">
+                <li class=" hover:underline link decoration-red-600 decoration-2 underline-offset-4"><a href="#HOME">HOME</a></li>
+                <li  class=" hover:underline link  decoration-red-600 decoration-2 underline-offset-4"><a href="#ABOUT">ABOUT US</a></li>
+                <li  class="hover:underline  link decoration-red-600 decoration-2 underline-offset-4"><a href="#PRODUCT">FOOD ITEMS</a></li>
+                <li  class="hover:underline link decoration-red-600 decoration-2 underline-offset-4"><a href="#MENU"> MENU</a></li>
+                <li  class="hover:underline link decoration-red-600 decoration-2 underline-offset-4"><a href="#OPENING">OPENING HOURS</a></li>
+                <li  class="hover:underline link decoration-red-600 decoration-2 underline-offset-4"><a href="#FOOTER"> ENQUIRY</a></li>
+            </ul>            
+        </div>
+
+         <div class="sect mobile hidden h-max w-auto fixed top-0 p-6 lg:hidden right-0 bg-slate-600 rounded-md overflow-x-hidden z-50">
+            <div class="flex justify-between">
                 <h1></h1>
-                <h1 class="text-6xl font-bold times lg:hidden text-red-600">&times</h1>
+                <h1 class="text-6xl font-medium times text-red-600">&times</h1>
             </div>
-            <ul class="p-5 lg:p-1 lg:flex lg:justify-between">
-                <li class="mb-3 hover:underline decoration-red-600 decoration-2 underline-offset-4"><a href="#HOME">HOME</a></li>
-                <li  class="mb-3 hover:underline decoration-red-600 decoration-2 underline-offset-4"><a href="#ABOUT">ABOUT US</a></li>
-                <li  class="mb-3 hover:underline decoration-red-600 decoration-2 underline-offset-4"><a href="#PRODUCT">FOOD ITEMS</a></li>
-                <li  class="mb-3 hover:underline decoration-red-600 decoration-2 underline-offset-4"><a href="#MENU"> MENU</a></li>
-                <li  class="mb-3 hover:underline decoration-red-600 decoration-2 underline-offset-4"><a href="#OPENING">OPENING HOURS</a></li>
-                <li  class="mb-3 hover:underline decoration-red-600 decoration-2 underline-offset-4"><a href="#FOOTER"> ENQUIRY</a></li>
+            <ul class="text-2xl">
+                <li class="mb-3 w-max link hover:underline decoration-red-600 decoration-2 underline-offset-4"><a href="#HOME">HOME</a></li>
+                <li  class="mb-3 w-max link hover:underline decoration-red-600 decoration-2 underline-offset-4"><a href="#ABOUT">ABOUT US</a></li>
+                <li  class="mb-3 w-max link hover:underline decoration-red-600 decoration-2 underline-offset-4"><a href="#PRODUCT">FOOD ITEMS</a></li>
+                <li  class="mb-3 w-max link hover:underline decoration-red-600 decoration-2 underline-offset-4"><a href="#MENU"> MENU</a></li>
+                <li  class="mb-3 w-max link hover:underline decoration-red-600 decoration-2 underline-offset-4"><a href="#OPENING">OPENING HOURS</a></li>
+                <li  class="mb-3 w-max link  hover:underline decoration-red-600 decoration-2 underline-offset-4"><a href="#FOOTER"> ENQUIRY</a></li>
             </ul>         
         </div>
-        </div>
-      </nav>
+        
+    </nav>
       <main class="h-auto mt-14 p-1">
-      <div  id="HOME"  class="slideShow relative h-56 md:h-72 overflow-hidden mt-5">
+      <div  id="HOME"  class="slideShow relative h-56 md:h-72 lg:h-96 overflow-hidden mt-5">
         <div class="slide  absolute  w-full transition-opacity">
             <img src="./Assets/Jollof rice.jpg" loading="lazy" class="w-full " alt="slidePics">
         </div>
@@ -54,16 +71,21 @@
       </div>
       <div id="ABOUT" class="ABOUT p-3 mt-5">
         <h1 class="text-center font-bold text-xl md:text-2xl mb-5 text-red-600">ABOUT US</h1>
-        <img src="" alt="">
-        <p class="md:text-xl">Wale grills is a london-based company..., ua. Ut enim ad minim veniam, quis nostrud
+        <div class="lg:flex lg:justify-evenly">
+            <div class=" hidden lg:inline-block   lg:w-2/5 h-96 overflow-hidden" >
+                <img src="./Assets/ABTUS.jpg"  alt="">
+            </div>
+       
+        <p class="md:text-xl lg:w-2/5    ">Wale grills is a london-based company..., ua. Ut enim ad minim veniam, quis nostrud
               exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
       </div>
       <div id="PRODUCT" class="productSection  h-60 mt-5">
         <h1 class="text-red-600  font-bold text-xl md:text-2xl mb-5  text-center">FOOD ITEMS</h1>
         <div class="flex  justify-around">
           <div class="border  w-max pl-2 pr-2 md:pl-4 md:pr-4 md:pt-2 md:pb-2 text-xl  md:text-2xl  pb-1 text-center h-full arrowL mt-auto mb-auto  rounded-full">&#8592</div>
           <div class="w-3/4  md:w-1/2" >
-            <div class="productSlide  relative h-44 md:h-64  overflow-hidden ">
+            <div class="productSlide  relative h-44 md:h-64 lg:h-96  overflow-hidden ">
                 <div class="productS absolute w-full h-full">
                     <img src="./Assets/BBQ RIBS.jpg" class="w-full h-full" alt="">
                 </div>
@@ -100,8 +122,10 @@
           <div class=" border w-max pl-2 pr-2 md:pl-4 md:pr-4 md:pt-2 md:pb-2 text-xl  md:text-2xl   pb-1 mt-auto mb-auto text-center arrowR rounded-full">&#8594</div>
         </div>
       </div>
-      <div id="MENU" class="menu w-11/12 ml-auto mr-auto mt-5 md:mt-36">
-            <h1 class="text-center text-red-600 mb-5 font-bold text-xl uppercase md:text-2xl md: mt-4">Standard Menu</h1>
+      <div id="MENU" class="menu w-11/12 ml-auto mr-auto mt-5 md:mt-36 lg:mt-64">
+          <h1 class="text-center text-red-600 mb-5 font-bold text-xl uppercase md:text-2xl md: mt-4">Standard Menu</h1>     
+          <div class="lg:flex lg:justify-around"   >
+            <div class="lg:w-2/5">
          <div class="trays mt-3">
         <h2 class=" ml-7 mb-3 text-red-600 font-medium md:text-xl md:font-bold">5l and 14L trays</h1>
         <ul class=" md:text-xl md:font-normal">
@@ -181,10 +205,20 @@
               </li>
             </ul>
             </div>
+            </div>
+            <div class="lg:w-2/5 lg:h-auto hidden  lg:inline-block"  >
+                <img src="./Assets/MEnu.jpg" class="lg:h-full"   alt="">
+            </div>
+          </div>
       </div>
       
       <div id="OPENING" class="OPENING p-3 mt-5">
         <h1 class="text-center text-red-600 mb-5 font-bold text-xl md:text-2xl">OPENING HOURS</h1>
+        <div class="lg:flex lg:justify-around lg:overflow-hidden"  >
+        <div class="lg:w-2/5 lg:h-96 hidden lg:inline-block ">
+            <img src="./Assets/Order.jpg"   alt="">
+        </div>
+        <div    class="lg:w-2/5 mt-auto mb-auto  ">
         <div class="flex justify-between md:mb-2 md:text-xl   ">
             <h1 class="">SATURDAY</h1>
             <h1 class="">9:00AM-7:00PM</h1>
@@ -199,20 +233,22 @@
             <li class="mb-3"   >DEADLINE for order is thursday at 10PM.</li>
             <li class="mb-3"   >Min spend for delivery is £120.Now accepting half tray orders.</li>
         </ul>
+        </div>
+    </div>
       </div>  
     </main>
-      <footer id="FOOTER" class="bg-red-600 ml-auto mr-auto p-3 mt-5 text-black">
+      <footer id="FOOTER" class="bg-red-600 ml-auto mr-auto p-3 mt-5 text-black lg:p-10">
         <h1 class="text-xl font-bold mb-5 md:mb-8  md:text-2xl"  >For further enquiries:</h1>
         <div class="flex justify-around w-3/4  md:w-1/2 md:mb-8   ml-auto mr-auto">
-            <img src="./Assets/icons8-whatsapp-50.png" class="w-8"    alt="">
-            <img src="./Assets/icons8-facebook-50.png" class="w-8" alt="">
-            <img src="./Assets/icons8-instagram-50.png" class="w-8" alt="">
-            <img src="./Assets/icons8-gmail-50.png" class="w-8" alt="">
-            <img src="./Assets/icons8-tiktok-50 (1).png" class="w-8" alt="">
+            <img src="./Assets/icons8-whatsapp-50.png" class="w-8 lg:w-20"    alt="">
+            <img src="./Assets/icons8-facebook-50.png" class="w-8 lg:w-20" alt="">
+            <img src="./Assets/icons8-instagram-50.png" class="w-8 lg:w-20" alt="">
+            <img src="./Assets/icons8-gmail-50.png" class="w-8 lg:w-20" alt="">
+            <img src="./Assets/icons8-tiktok-50 (1).png" class="w-8 lg:w-20" alt="">
         </div>
         <div class="adress flex mt-3 ml-auto mr-auto text-center w-max md:text-2xl md:mb-8">
-        <img src="./Assets/icons8-location-50.png" class="w-8"   alt="">
-        <h1 class="font-bold "  >SE LONDON-ABBEY WOOD.</h1>
+        <img src="./Assets/icons8-location-50.png" class="w-8 lg:w-20"   alt="">
+        <h1 class="font-bold mt-auto mb-auto"  >SE LONDON-ABBEY WOOD.</h1>
         </div>
       </footer>
     </div>
