@@ -1,4 +1,5 @@
 let slideIndex = 0;
+
 const itemList = [
   "Bbq grills",
   "Beef grill",
@@ -57,7 +58,36 @@ function showSlide(container, pIndex, itName) {
   itName.textContent = itemList[pslideIndex];
 }
 
+function navBar() {
+  const navHam = document.querySelector(".navHam");
+  const sideNav = document.querySelector(".sect");
+  const times = document.querySelector(".times");
+  navHam.addEventListener("click", function () {
+    sideNav.style.width = "60%";
+  });
+  times.addEventListener("click", function () {
+    sideNav.style.width = "0%";
+  });
+}
+
+function slideTo() {
+  const Links = document.querySelectorAll(".sect a");
+  Links.forEach((link) =>
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const targetId = link.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        window.scrollTo({ top: targetElement.offsetTop, behavior: "smooth" });
+      }
+    })
+  );
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   carousel();
   productSlide();
+  navBar();
+  slideTo();
 });

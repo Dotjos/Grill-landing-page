@@ -13,16 +13,32 @@
   </head>
   <body class="bg-black h-full font-robotoMono  text-slate-200  ">
     <div class="wrapper w-full ml-auto mr-auto">
-      <nav class="w-11/12 ml-auto mr-auto flex mt-3 justify-between h-12">
+      <nav class="w-full top-0 p-2 ml-auto mr-auto flex fixed z-50 backdrop-blur-sm lg:bg-black justify-between h-auto">
         <img src="./Assets/icons8-grill-50.png" alt="" class="text-red-600" />
-        <div class="mt-auto mb-auto">
+        <div class="sideNav mt-auto mb-auto">
+        <div class="mt-auto lg:hidden mb-auto navHam">
           <div class="w-9 h-1 bg-red-600 rounded-sm"></div>
           <div class="w-9 h-1 bg-red-600 mt-1.5 rounded-sm"></div>
           <div class="w-9 h-1 bg-red-600 mt-1.5 rounded-sm"></div>
         </div>
+        <div class="sect h-max w-0 lg:w-4/5 lg:top-2 lg:bg-black  fixed top-0 right-0 bg-black rounded-md overflow-x-hidden z-50">
+            <div class="flex justify-between p-3"  >
+                <h1></h1>
+                <h1 class="text-6xl font-bold times text-red-600">&times</h1>
+            </div>
+            <ul class="p-5 lg:p-1 lg:flex lg:justify-between">
+                <li class="mb-3 hover:underline decoration-red-600 decoration-2 underline-offset-4"><a href="#HOME">HOME</a></li>
+                <li  class="mb-3 hover:underline decoration-red-600 decoration-2 underline-offset-4"><a href="#ABOUT">ABOUT US</a></li>
+                <li  class="mb-3 hover:underline decoration-red-600 decoration-2 underline-offset-4"><a href="#PRODUCT">FOOD ITEMS</a></li>
+                <li  class="mb-3 hover:underline decoration-red-600 decoration-2 underline-offset-4"><a href="#MENU"> MENU</a></li>
+                <li  class="mb-3 hover:underline decoration-red-600 decoration-2 underline-offset-4"><a href="#OPENING">OPENING HOURS</a></li>
+                <li  class="mb-3 hover:underline decoration-red-600 decoration-2 underline-offset-4"><a href="#FOOTER"> ENQUIRY</a></li>
+            </ul>         
+        </div>
+        </div>
       </nav>
-      <main class="h-full mt-5 p-1">
-      <div class="slideShow relative h-56 overflow-hidden">
+      <main class="h-full mt-14 p-1">
+      <div  id="HOME"  class="slideShow relative h-56 overflow-hidden">
         <div class="slide  absolute  w-full transition-opacity">
             <img src="./Assets/Jollof rice.jpg" loading="lazy" class="w-full " alt="slidePics">
         </div>
@@ -36,16 +52,16 @@
             <h1 class="text-4xl font-sacraMento text-center translate-y-20  text-slate-200">Wale grills</h1>
         </div>
       </div>
-      <div class="ABOUT p-3">
+      <div id="ABOUT" class="ABOUT p-3">
         <h1 class="text-center font-bold text-xl text-red-600">ABOUT US</h1>
         <img src="" alt="">
         <p>Wale grills is a london-based company..., ua. Ut enim ad minim veniam, quis nostrud
               exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
-      <div class="productSection h-60">
+      <div id="PRODUCT" class="productSection h-60">
         <h1 class="text-red-600  font-bold text-xl  text-center">FOOD ITEMS</h1>
         <div class="flex justify-between">
-          <div class="border w-max pl-2 pr-2 text-xl pb-1 text-center arrowL mt-auto mb-auto  rounded-full">&#8592</div>
+          <div class="border w-max pl-2.5 pr-2.5 text-xl pb-1 text-center arrowL mt-auto mb-auto  rounded-full">&#8592</div>
           <div class="w-3/4" >
             <div class="productSlide  relative h-44 w-full overflow-hidden ">
                 <div class="productS absolute w-full h-full">
@@ -81,11 +97,10 @@
             </div>
             <div><h1 class="text-center itemName uppercase"></h1></div>
           </div>
-          <div class=" border w-max pl-2 pr-2 text-xl pb-1 mt-auto mb-auto text-center arrowR rounded-full">&#8594</div>
+          <div class=" border w-max pl-2.5 pr-2.5 text-xl pb-1 mt-auto mb-auto text-center arrowR rounded-full">&#8594</div>
         </div>
       </div>
-
-      <div class="menu  w-11/12 mt-4 ml-auto mr-auto">
+      <div id="MENU" class="menu  w-11/12 mt-4 ml-auto mr-auto">
             <h1 class="text-center text-red-600  font-bold text-xl uppercase">Standard Menu</h1>
          <div class="trays mt-3">
         <h2 class=" ml-7 mb-3 text-red-600 font-medium  ">5l and 14L trays</h1>
@@ -168,7 +183,7 @@
             </div>
       </div>
       
-      <div class="OPENING p-3">
+      <div id="OPENING" class="OPENING p-3">
         <h1 class="text-center text-red-600 mb-3 font-bold text-xl ">OPENING HOURS</h1>
         <div class="flex justify-between">
             <h1>SATURDAY</h1>
@@ -186,7 +201,7 @@
         </ul>
       </div>  
     </main>
-      <footer class="bg-red-600 ml-auto mr-auto p-3  text-black">
+      <footer id="FOOTER" class="bg-red-600 ml-auto mr-auto p-3  text-black">
         <h1 class="text-xl font-bold "  >For further enquiries:</h1>
         <div class="flex justify-around w-3/4 ml-auto mr-auto">
             <img src="./Assets/icons8-whatsapp-50.png" class="w-8"    alt="">
